@@ -4,6 +4,7 @@ let emailvalid=false
 let numbervalid=false
 let passwordvalid=false
 let confirmvalid=false
+document.getElementById("buttoncheck").disabled=true
 
 function fevent(){
     let wrongA = document.getElementById("first-error")
@@ -27,6 +28,7 @@ function fevent(){
         wrongA.style.color="red"
     }
     console.log("working")
+       signin()
 }
 
 function levent(){
@@ -36,7 +38,13 @@ function levent(){
 
     const lastRight= /^[A-Za-z]{2,}$/
 
-    if (lastRight.test(lastel)){
+    
+    if(lastel==""){
+            wrongB.textContent=""
+            
+        }
+
+    else if (lastRight.test(lastel)){
         wrongB.textContent ="ok"
         wrongB.style.color="green"
         lastvalid=true
@@ -48,6 +56,7 @@ function levent(){
         wrongB.style.color="red"
     }
     console.log("working")
+       signin()
 }
 
 function Eevent(){
@@ -67,7 +76,7 @@ function Eevent(){
     }
 
     console.log("Email value:", emailel);
-
+       signin()
 }
 
 function nevent(){
@@ -88,6 +97,7 @@ function nevent(){
     }
     console.log("working")
 
+       signin()
 }
 
 function pevent(){
@@ -105,6 +115,7 @@ function pevent(){
         wrongD.style.color="red"
     }
 
+       signin()
 }
 
 function cevent(){
@@ -121,6 +132,7 @@ function cevent(){
         wrongE.textContent="password dont match!!"
         wrongE.style.color="red"
     }
+    signin()
 }
 function signin(){
    
@@ -130,7 +142,9 @@ function signin(){
     ){
         document.getElementById("buttoncheck").disabled=false
     }
-    
+    else{
+        document.getElementById("buttoncheck").disabled=true
+    }
 
 }
 
