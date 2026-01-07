@@ -8,8 +8,7 @@ button{
  margin-bottom: 40px;
  margin-top: 20px;
 }
-
-
-p{
-    margin: 13px;
+.box{
+    display: block;
+    margin: 13px
 }

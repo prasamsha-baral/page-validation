@@ -11,7 +11,7 @@ function fevent(){
     let firstel= document.getElementById("first").value
     const isRight= /^[A-Za-z]{2,}$/
 
-
+ 
         if(firstel==""){
             wrongA.textContent=""
             
