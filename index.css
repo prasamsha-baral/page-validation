@@ -1,14 +1,20 @@
-.center{
-    width: 300px;
-    margin: auto;
-    border: 1px solid black;
+/* body{
+    background-color: antiquewhite;
+    justify-content: center;
+    align-items: center;
+    display: flex
+} */
+
+body{
+    background-color: antiquewhite;
+}
+#page{
+     background-color: #6c757d;
+     width: 90%;
+     border-radius: 5px;
     text-align: center;
-}
-button{
- margin-bottom: 40px;
- margin-top: 20px;
-}
-.box{
-    display: block;
-    margin: 13px
+    align-items: center;
+     display: block;
+     margin:auto;
+     
 }
